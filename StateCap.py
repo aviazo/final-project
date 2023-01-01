@@ -107,12 +107,18 @@ def states_capitals_string():
     
 states_capitals_string()
 print ("\n")
+
+def get_state():
+    capital = input('Enter a capital to find the state: ')
+    for value , key in STATES_CAPITALS.items():
+        if capital in key:
+            print('The state is :' , value)
+   
+  
+get_state()
+
+
 '''
-def get_state(capital):
-    pass
-
-
-
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
 
