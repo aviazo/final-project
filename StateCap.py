@@ -9,11 +9,10 @@ is it in?
 Implement the function def get_state(capital): below so it returns the state.
 GOTCHAS: What happens if two states have the same capital name, how do you
 handle that?
-
 """
 import sys
 
-#import pytest
+import pytest
 
 STATES_CAPITALS = {
     'Alabama' : 'Montgomery',
@@ -70,55 +69,28 @@ STATES_CAPITALS = {
 
 
 def capital_of_Idaho():
-    print("the capital of Idaho is:", STATES_CAPITALS['Idaho'])
-        
-capital_of_Idaho()
-print ("\n")
+    # Your code here
+    pass
 
 def all_states():
-    print ("The lists of the states is:")
-    [print(keys) for keys in STATES_CAPITALS]
-    
-
-all_states()
-print ("\n")
+    # Your code here
+    pass
 
 def all_capitals():
-    print ("The list of thr capitals is:")
-    for keys, value in STATES_CAPITALS.items():
-        print(value)
-
-
-all_capitals()
-print ("\n")
+    # Your code here
+    pass
 
 def states_capitals_string():
-    
-    sorted_STATES_CAPITALS = sorted(STATES_CAPITALS.items(), key=lambda x:x[0])
-    
-    str = ""
-        
-    print ("The sort list of the states and capitals is:")
-
-    for keys, value in sorted_STATES_CAPITALS:
-        str += keys + '->' + value + ' , '
-      
-    print(str)
-    
-states_capitals_string()
-print ("\n")
-
-def get_state():
-    capital = input('Enter a capital to find the state: ')
-    for value , key in STATES_CAPITALS.items():
-        if capital in key:
-            print('The state is :' , value)
-   
-  
-get_state()
+    # Your code here
+    pass
 
 
-'''
+
+def get_state(capital):
+    pass
+
+
+
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
 
@@ -143,4 +115,3 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
-    '''
