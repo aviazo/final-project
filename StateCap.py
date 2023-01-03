@@ -13,7 +13,7 @@ handle that?
 """
 import sys
 
-#import pytest
+import pytest
 
 STATES_CAPITALS = {
     'Alabama' : 'Montgomery',
