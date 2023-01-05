@@ -71,14 +71,15 @@ STATES_CAPITALS = {
 
 def capital_of_Idaho():
     print("the capital of Idaho is:", STATES_CAPITALS['Idaho'])
-        
+pass
+
 capital_of_Idaho()
 print ("\n")
 
 def all_states():
     print ("The lists of the states is:")
     [print(keys) for keys in STATES_CAPITALS]
-    
+pass    
 
 all_states()
 print ("\n")
@@ -87,7 +88,7 @@ def all_capitals():
     print ("The list of thr capitals is:")
     for keys, value in STATES_CAPITALS.items():
         print(value)
-
+pass
 
 all_capitals()
 print ("\n")
@@ -104,7 +105,8 @@ def states_capitals_string():
         str += keys + '->' + value + ' , '
       
     print(str)
-    
+pass
+
 states_capitals_string()
 print ("\n")
 
@@ -113,12 +115,12 @@ def get_state():
     for value , key in STATES_CAPITALS.items():
         if capital in key:
             print('The state is :' , value)
-   
+pass   
   
 get_state()
 
 
-'''
+
 def test_state_to_capital():
     assert 'Cheyenne' == STATES_CAPITALS['Wyoming']
 
@@ -143,4 +145,4 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
-    '''
+  
