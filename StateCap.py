@@ -70,25 +70,54 @@ STATES_CAPITALS = {
 
 
 def capital_of_Idaho():
-    # Your code here
-    pass
+    print("the capital of Idaho is:", STATES_CAPITALS['Idaho'])
+pass
+
+capital_of_Idaho()
+print ("\n")
 
 def all_states():
-    # Your code here
-    pass
+    print ("The lists of the states is:")
+    [print(keys) for keys in STATES_CAPITALS]
+pass    
+
+all_states()
+print ("\n")
 
 def all_capitals():
-    # Your code here
-    pass
+    print ("The list of thr capitals is:")
+    for keys, value in STATES_CAPITALS.items():
+        print(value)
+pass
+
+all_capitals()
+print ("\n")
 
 def states_capitals_string():
-    # Your code here
-    pass
+    
+    sorted_STATES_CAPITALS = sorted(STATES_CAPITALS.items(), key=lambda x:x[0])
+    
+    str = ""
+        
+    print ("The sort list of the states and capitals is:")
 
+    for keys, value in sorted_STATES_CAPITALS:
+        str += keys + '->' + value + ' , '
+      
+    print(str)
+pass
 
+states_capitals_string()
+print ("\n")
 
-def get_state(capital):
-    pass
+def get_state():
+    capital = input('Enter a capital to find the state: ')
+    for value , key in STATES_CAPITALS.items():
+        if capital in key:
+            print('The state is :' , value)
+pass   
+  
+get_state()
 
 
 
@@ -116,3 +145,4 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+  
